@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.contrib import admin
+from django.urls import path , include
+"""" Supongo que viene de academia"""
+from academia import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('academia.urls')),
+    path('', views.clientes, name='clientes_list'),
 ]
