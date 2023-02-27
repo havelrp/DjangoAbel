@@ -1,7 +1,7 @@
 from django import forms
-from academia.models import profesor
+from plastic_dreams.models import cliente
 
-class ProfesorForm(forms.Form):
+class AlumnoForm(forms.Form):
     nombre = forms.CharField(max_length=50)
     apellido = forms.CharField(max_length=50)
     dni = forms.CharField(max_length=8)
@@ -9,3 +9,4 @@ class ProfesorForm(forms.Form):
     email = forms.EmailField()
     telefono = forms.CharField(max_length=20)
     direccion = forms.CharField(max_length=100)
+    

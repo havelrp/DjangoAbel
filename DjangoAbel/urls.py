@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path , include
-"""" Supongo que viene de academia"""
+"""" Supongo que viene de plastic_dreams"""
 from academia import views
 
 urlpatterns = [
